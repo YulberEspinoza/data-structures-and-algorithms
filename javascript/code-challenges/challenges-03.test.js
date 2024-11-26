@@ -8,11 +8,11 @@ Write a function called addTwo that takes in an array and adds two to every valu
 
 const addTwo = (arr) => {
   // Solution code here...
-  const arreglo = [];
+  let newArray = [];
   for (let i = 0; i < arr.length; i++) {
-    arreglo.push(arr[i] + 2);
+    newArray.push(arr[i] + 2);
   }
-  return arreglo;
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -191,8 +191,8 @@ For example: evenOddNumericValues(['Gregor', 2, 4, 1]) returns ['even', 'even', 
 const evenOddNumericValues = (arr) => {
   // Solution code here...
   return arr
-    .filter((value) => typeof value === "number")
-    .map((value) => (value % 2 === 0 ? "even" : "odd"));
+    .filter((item) => typeof item === "number")
+    .map((item) => (item % 2 === 0 ? "even" : "odd"));
 };
 
 /* ------------------------------------------------------------------------------------------------
