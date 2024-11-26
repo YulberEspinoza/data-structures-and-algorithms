@@ -29,7 +29,7 @@ Prove that the original people array is unchanged
 
 const addPeople = (arr) => {
   // Solution code here...
-  const newPeople = ["Odie", ...arr, "Garfield"];
+  let newPeople = ["Odie", ...arr, "Garfield"];
   return newPeople;
 };
 
